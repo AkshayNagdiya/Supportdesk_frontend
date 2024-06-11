@@ -62,14 +62,14 @@ const NavBar = () => {
               to="/login"
               className="text-xl md:text-3xl font-bold text-white"
             >
-              Support Desk
+              ResolveIt
             </Link>
           </>
         ) : (
           <>
             {" "}
             <Link to="/" className="text-xl md:text-3xl font-bold text-white">
-              Support Desk
+              ResolveIt
             </Link>
           </>
         )}
