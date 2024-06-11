@@ -23,7 +23,7 @@ const NavBar = () => {
   };
 
   const handlelogout = () => {
-    navigate("/login");
+    navigate(location.pathname === ("/login"));
     dispatch(usersLogOut());
     window.location.reload();
   };
@@ -110,8 +110,8 @@ const NavBar = () => {
           {users ? (
             <>
               <Link
-                onClick={handlelogout}
                 to="/login"
+                onClick={handlelogout}
                 className={`text-white p-2 px-4 bg-red-600 hover:text-gray-200 transition duration-300 ${
                   isActive("/login")
                     ? "bg-blue-500 text-white py-2 px-4 rounded transition duration-300 "
@@ -201,8 +201,8 @@ const NavBar = () => {
           {users ? (
             <Link onClick={closeMenu}>
               <Link
-                onClick={handlelogout}
                 to="/login"
+                onClick={handlelogout}
                 className={`fixed bottom-0 w-full text-center text-white p-2 px-4 bg-red-600 hover:text-gray-200 transition duration-300 ${
                   isActive("/login")
                     ? "bg-blue-500 text-white py-2 px-4 rounded transition duration-300 "
