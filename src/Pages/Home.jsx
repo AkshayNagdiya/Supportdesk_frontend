@@ -25,7 +25,7 @@ const Home = () => {
       style={{ height: `${calculateContentHeight()}px` }}
     >
       <div className="text-center">
-        <h1 className="text-4xl font-bold mb-6">Welcome to Support Desk!</h1>
+        <h1 className="text-4xl font-bold mb-6">Welcome to ResolveIt Desk!</h1>
         <p className="text-sm md:text-lg mb-8">
           Your go-to platform for managing customer support tickets.
         </p>
